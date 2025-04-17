@@ -1,15 +1,37 @@
 <script setup>
 import  data  from "./data/data"
 const number = 12
+const part6Title = "This is <b> Bold </b> Part 6 of the <strong> Vue.js App </strong> "
+
+const url = "https://www.pexels.com/search/"
+const animal = "cat"
+
 const go = {
   title: "Welcome to My Portfolio",
   description: "This is a simple portfolio page built with Vue.js and Tailwind CSS.",
   image: "https://images.unsplash.com/photo-1506765515384-028b60a970df",
   buttonText: "Learn More",
 }
+
+
+
 </script>
 
 <template>
+  <div>
+    <h2 class="text-4xl font-bold mb-6"> Part 6</h2>
+    <p v-html="part6Title" class="text-2xl mb-4"> 
+       
+    </p>
+  </div>
+  <div>
+    <h2 class="text-4xl font-bold mb-6">
+      PArt 5
+    </h2>
+    <h3> 
+      <a :href="url+animal" target="_blank" >Search For {{ animal }} </a>  
+    </h3>
+  </div>
 <div>
   <h1 class="text-4xl font-bold mb-6"> Part 4 </h1>
   <h2 class="text-3xl font-bold mb-3"> Javascript Expression & calculation </h2>
